@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+
+body {
+    background-color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 45px;
+}
+
+nav ul li{
+    padding: 0 10px;
+}
+
+.appLogo img{
+    width: 40px;
+}
+
+.appLogo{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.player{
+    min-height: 77vh;
+    background-color: rgb(146, 223, 223);
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 10px;
+    background-image: url("https://img.freepik.com/premium-photo/funny-ultra-soft-music-player-mobile-phone-isolated-pink-background-pastel-colors-colorful-poster-banner-cartoon-minimal-air-style-3d-illustration_76964-5448.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.player h1{
+    color: white;
+    margin-left: 10px;
+}
+.playerBottom{
+    position: sticky;
+    height: 80px;
+    background-color: rgb(185, 170, 236);
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#progressBar{
+    width: 80vw;
+    text-align: center;
+}
+
+.playerIcons{
+    margin-top: 6px;
+    color: rgb(0 117 255);
+}
+
+.playerIcons i{
+    cursor: pointer;
+    padding: 8px;
+}
+
+@media (min-width:1400px) and (max-width:3000px){
+    .player img{
+        background-repeat: repeat;
+    }
+}
