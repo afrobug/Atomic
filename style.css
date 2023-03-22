@@ -19,6 +19,12 @@ nav ul{
 
 nav ul li{
     padding: 0 10px;
+    font-size: large;
+    font-weight: bold;
+}
+
+nav ul form{
+    margin-left: 10px;
 }
 
 .appLogo img{
@@ -41,7 +47,7 @@ nav ul li{
     background-image: url("https://img.freepik.com/premium-photo/funny-ultra-soft-music-player-mobile-phone-isolated-pink-background-pastel-colors-colorful-poster-banner-cartoon-minimal-air-style-3d-illustration_76964-5448.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: left;
 }
 
 .player h1{
@@ -51,7 +57,7 @@ nav ul li{
 .playerBottom{
     position: sticky;
     height: 80px;
-    background-color: rgb(185, 170, 236);
+    background-color: rgb(245 244 247);
     bottom: 0;
     display: flex;
     justify-content: center;
@@ -74,8 +80,49 @@ nav ul li{
     padding: 8px;
 }
 
+.songItemContainer{
+    margin-top: 34px;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 12px 10px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songItem img{
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+
+.timestamp{
+    margin: 0 23px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songInfo img{
+    /* opacity: 0; */
+    transition: opacity 0.4s ease-in;
+    margin-top: 5px;
+}
+
 @media (min-width:1400px) and (max-width:3000px){
     .player img{
-        background-repeat: repeat;
+        background-repeat: no-repeat;
     }
 }
